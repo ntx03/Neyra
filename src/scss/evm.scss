@@ -1,0 +1,67 @@
+.evm {
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+}
+
+.evm__title {
+    font-family: "Proxima Nova Lt";
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    max-width: 454px;
+}
+
+.evm__text {
+    font-family: "Proxima Nova Th";
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 100;
+    margin: 0 auto 63px auto;
+    max-width: 360px;
+    text-align: center;
+}
+.image-container {
+    width: 42%;
+    position: relative;
+    padding-top: 60%;
+    margin: 0 auto 0 auto;
+}
+.evm__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border: none;
+}
+
+.question__container {
+    &:last-child {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 460px) {
+    .evm__title {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .evm__text {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 265px;
+        margin: 0 auto 23px auto;
+    }
+
+    .question__container {
+        &:last-child {
+            margin-bottom: 40px;
+        }
+    }
+}

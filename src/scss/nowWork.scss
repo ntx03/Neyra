@@ -1,0 +1,84 @@
+.neyra__howWork {
+    display: flex;
+    flex-direction: column;
+    max-width: 820px;
+    margin: 100px auto 0 auto;
+    .neyra__howWork-title {
+        margin: 0 auto 0 auto;
+        font-family: "Proxima Nova Lt";
+        font-size: 50px;
+        line-height: 55px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .neyra__howWork-card {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 50px auto 0 auto;
+        .heyra__card-image {
+            width: 60px;
+            margin: 0 auto 15px auto;
+        }
+        .heyra__nowWork-text {
+            font-family: "Proxima Nova Th";
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 100;
+            text-align: center;
+        }
+        @media (max-width: 550px) {
+            .heyra__nowWork-text {
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+
+    .neypa__nowWork-comment {
+        max-width: 728px;
+        background-color: rgba(193, 211, 255, 0.07);
+        margin: 100px auto 0 auto;
+        border-radius: 15px;
+        .neypa__nowWork-comment-text {
+            font-family: "Proxima Nova Th";
+            font-size: 20px;
+            line-height: 27px;
+            font-weight: 100;
+            text-align: start;
+            padding: 40px 48px 20px 48px;
+        }
+        @media (max-width: 750px) {
+            .neypa__nowWork-comment-text {
+                padding: 20px;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 750px) {
+        .neypa__nowWork-comment {
+            margin: 100px 20px 0 20px;
+        }
+        .neyra__howWork-title {
+            font-size: 30px;
+            line-height: 33px;
+        }
+
+        .neyra__howWork-card {
+            margin: 70px auto 0 auto;
+        }
+    }
+    @media (max-width: 550px) {
+        .neyra__howWork-card {
+            margin: 70px 20px 0 20px;
+        }
+    }
+}
+@media (max-width: 750px) {
+    .neyra__howWork {
+        margin: 70px auto 0 auto;
+    }
+}

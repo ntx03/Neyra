@@ -1,0 +1,126 @@
+.footer {
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
+    background-color: rgba(193, 211, 255, 0.07);
+    position: relative;
+}
+.footer__container {
+    margin: 72px 100px 42px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__text-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.footer__text-left {
+    max-width: 560px;
+    font-family: "Proxima Nova Rg";
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: start;
+    color: #a0a0aa;
+}
+.footer__text-rigth {
+    max-width: 655px;
+    font-family: "Proxima Nova Rg";
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: start;
+    color: #a0a0aa;
+}
+
+.footer__last-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 60px auto 0 0;
+    width: 100%;
+}
+.footer__link-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.footer__link {
+    color: #a0a0aa;
+    font-family: "Proxima Nova Lt";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    text-align: center;
+}
+.footer__text {
+    color: #a0a0aa;
+    font-family: "Proxima Nova Lt";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    text-align: center;
+}
+.footer__backround-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@media (max-width: 999px) {
+    .footer__container {
+        margin: 72px 40px 42px 40px;
+    }
+}
+
+@media (max-width: 850px) {
+    .footer__last-container {
+        flex-direction: column;
+        margin: 20px auto 0 0;
+    }
+    .footer__link-container {
+        flex-direction: column;
+        gap: 5px;
+        margin: 0 auto 5px 0;
+    }
+
+    .footer__link {
+        text-align: start;
+    }
+    .footer__text {
+        text-align: start;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer__text-left {
+        display: none;
+    }
+
+    .footer__text-rigth {
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer__container {
+        margin: 0 40px 20px 40px;
+    }
+
+    .footer__backround-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer__text {
+        margin-top: 9px;
+    }
+}

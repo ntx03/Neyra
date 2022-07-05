@@ -1,0 +1,68 @@
+.neyra__qestion-container {
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    .neyra__qestion-titte {
+        font-family: "Proxima Nova Lt";
+        font-size: 50px;
+        line-height: 75px;
+        font-weight: 300;
+        text-align: center;
+        margin: 0 auto 50px auto;
+    }
+    .neyra__qestion-text {
+        font-family: "Proxima Nova Th";
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 100;
+        text-align: center;
+        max-width: 630px;
+        margin: 0 auto 80px auto;
+    }
+    .qestion__video-container {
+        width: 83.5%;
+        position: relative;
+        padding-top: 47.1%;
+        margin: 0 auto 0 auto;
+        .neyra__qestion-video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            border: none;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .neyra__qestion-text {
+            margin: 0 auto 80px auto;
+            width: 83.5%;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .neyra__qestion-text {
+            margin: 0 auto 80px auto;
+            width: auto;
+            margin: 0 20px 55px 20px;
+            font-size: 18px;
+            line-height: 27px;
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+
+        .neyra__qestion-titte {
+            font-size: 30px;
+            line-height: 33px;
+            margin: 0 auto 45px auto;
+        }
+
+        .qestion__video-container {
+            width: 100%;
+            padding-top: 56%;
+        }
+    }
+}

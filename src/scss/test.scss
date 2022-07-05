@@ -1,0 +1,166 @@
+.test {
+    max-width: 822px;
+    background-color: rgba(193, 211, 255, 0.07);
+    border-radius: 15px;
+    margin: 100px auto 0 auto;
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.test__title {
+    font-family: "Proxima Nova Lt";
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 300;
+    text-align: start;
+}
+.test__text-title {
+    font-family: "Proxima Nova Th";
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 100;
+    text-align: start;
+    margin: 0 0 80px 0;
+}
+.test__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.test__input {
+    background-color: rgba(193, 211, 255, 0);
+    width: 493px;
+    border: none;
+    color: #a0a0aa;
+    outline: none;
+    padding-bottom: 11px;
+    border-bottom: 2px solid rgba(193, 211, 255, 0.07);
+    margin: 0 0 24px 0;
+    font-family: "Proxima Nova Th";
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 100;
+}
+.test__text-form {
+    font-family: "Proxima Nova Th";
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 100;
+    text-align: start;
+    color: #a0a0aa;
+}
+.test__button {
+    width: 189px;
+    height: 47px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 40px 10px 40px;
+    font-family: "Proxima Nova Lt";
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 0 24px 20px;
+}
+
+@media all and (min-width: 850px) {
+    .test__input {
+        order: 1;
+    }
+    .test__button {
+        order: 2;
+    }
+    .test__text-form {
+        order: 3;
+    }
+}
+
+@media (max-width: 850px) {
+    .test__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .test__text-form {
+        max-width: 493px;
+        margin: 0 auto 0 auto;
+    }
+
+    .test__input {
+        margin: 0 auto 24px auto;
+    }
+    .test__button {
+        margin: 40px auto 0 auto;
+        width: 296px;
+    }
+
+    .test__title {
+        text-align: center;
+    }
+
+    .test__text-title {
+        max-width: 493px;
+        text-align: center;
+        margin: 0 auto 50px auto;
+    }
+
+    .test {
+        padding: 10px 30px 10px 30px;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 640px) {
+    .test {
+        margin: 100px 20px 0 20px;
+    }
+
+    .test__button {
+        padding: 0;
+        margin: 24px auto 0 auto;
+    }
+
+    .test__text-form {
+        text-align: start;
+        margin: 0 auto 0 0;
+    }
+
+    .test__input {
+        width: 100%;
+        margin: 0 auto 0 0;
+    }
+
+    .test {
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .test {
+        margin: 60px 20px 0 20px;
+    }
+
+    .test__title {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: start;
+    }
+
+    .test__text-title {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 15px auto 50px auto;
+        text-align: start;
+    }
+
+    .test__text-form {
+        line-height: 21px;
+    }
+
+    .test__input {
+        width: 100%;
+        margin: 0 auto 24px 0;
+    }
+}

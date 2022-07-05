@@ -1,0 +1,71 @@
+.question {
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+}
+.question__title {
+    font-family: "Proxima Nova Lt";
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+.question__question {
+    font-family: "Proxima Nova Lt";
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: start;
+    margin: 0 auto 20px auto;
+    max-width: 800px;
+}
+.question__answer {
+    font-family: "Proxima Nova Th";
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 100;
+    margin: 0 auto 50px auto;
+    max-width: 800px;
+    text-align: start;
+}
+.question__line {
+    width: 100%;
+    border-bottom: 1px solid #a0a0aa;
+    margin: 0 auto 50px auto;
+    max-width: 800px;
+}
+
+@media (max-width: 880px) {
+    .question {
+        margin: 100px 40px 0 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .question {
+        margin: 100px 20px 0 20px;
+    }
+
+    .question__title {
+        font-size: 30px;
+        line-height: 33px;
+        margin: 0 auto 30px auto;
+    }
+
+    .question__question {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .question__answer {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 auto 24px auto;
+    }
+
+    .question__line {
+        margin: 0 auto 18px auto;
+    }
+}

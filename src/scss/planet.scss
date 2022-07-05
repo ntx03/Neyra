@@ -1,0 +1,59 @@
+.planet {
+    margin: 100px auto 0 auto;
+    padding: 30px 50px 40px 50px;
+    max-width: 822px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(193, 211, 255, 0.07);
+    border-radius: 15px;
+}
+.planet__title {
+    font-family: "Proxima Nova Lt";
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 300;
+    text-align: start;
+    margin: 0 auto 20px 0;
+}
+.planet__text {
+    font-family: "Proxima Nova Th";
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 100;
+    text-align: start;
+}
+
+@media (max-width: 1060px) {
+    .planet {
+        margin: 100px 40px 0 19%;
+    }
+}
+
+@media (max-width: 750px) {
+    .planet {
+        margin: 100px 40px 0 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .planet__text {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .planet__title {
+        font-size: 24px;
+        line-height: 29px;
+        margin: 0 auto 0 0;
+        max-width: 190px;
+    }
+
+    .planet {
+        padding: 20px 20px 50px 20px;
+    }
+}

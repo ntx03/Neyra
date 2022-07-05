@@ -1,0 +1,85 @@
+.moreCredits {
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.moreCredits__title {
+    font-family: "Proxima Nova Lt";
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    max-width: 703px;
+}
+.moreCredits__information {
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+.moreCredits__information-title {
+    font-family: "Proxima Nova Lt";
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+.moreCredits__information-text {
+    font-family: "Proxima Nova Th";
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+.moreCredits__text {
+    font-family: "Proxima Nova Th";
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 100;
+    text-align: center;
+    margin: 50px auto 0 auto;
+}
+
+@media (max-width: 800px) {
+    .moreCredits {
+        margin: 50px 40px 0 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .moreCredits__title {
+        font-size: 30px;
+        line-height: 33px;
+        margin: 0 auto 70px auto;
+    }
+
+    .moreCredits__information-title {
+        font-size: 20px;
+        line-height: 27px;
+        margin: 0 auto 5px auto;
+    }
+
+    .moreCredits__information-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .moreCredits__text {
+        font-size: 18px;
+        line-height: 27px;
+        max-width: 335px;
+        margin: 70px auto 0 auto;
+    }
+
+    .moreCredits__information {
+        margin: 0 auto 70px auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .moreCredits {
+        margin: 50px 20px 0 20px;
+    }
+}

@@ -1,0 +1,45 @@
+.bankLable {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 0 auto;
+}
+.bankLable__title {
+    font-family: "Proxima Nova Lt";
+    font-size: 50px;
+    line-height: 75px;
+    font-weight: 300;
+    margin: 0 auto 50px auto;
+}
+.bankLable__container {
+    display: flex;
+    flex-direction: row;
+    gap: 161px;
+}
+.bankLable__lable {
+}
+
+@media (max-width: 850px) {
+    .bankLable__container {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 690px) {
+    .bankLable__container {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 520px) {
+    .bankLable__container {
+        gap: 34px;
+    }
+    .bankLable__lable {
+        width: 47px;
+    }
+
+    .bankLable__title {
+        font-size: 30px;
+        line-height: 33px;
+    }
+}

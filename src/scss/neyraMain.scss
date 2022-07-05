@@ -1,0 +1,122 @@
+.neyra__main {
+    margin: 0 auto 227px auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1240px;
+
+    .neyra__text-container {
+        padding: 0 0 0 63px;
+        margin: auto 3px auto 0;
+        flex-direction: column;
+        .neyra__title {
+            font-size: 128px;
+            line-height: normal;
+            text-align: start;
+            margin-bottom: 10px;
+        }
+        .neyra__text {
+            font-family: "Proxima Nova Th";
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: 100;
+            text-align: start;
+            max-width: 500px;
+        }
+        @media (max-width: 1000px) {
+            .neyra__title {
+                font-size: 100px;
+            }
+            .neyra__text {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .neyra__title {
+                text-align: center;
+            }
+            .neyra__text {
+                text-align: center;
+                margin: 0 auto 0 auto;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .neyra__title {
+                text-align: center;
+                font-size: 50px;
+                line-height: 55px;
+                margin-bottom: 20px;
+            }
+            .neyra__text {
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @media (max-width: 800px) {
+        .neyra__text-container {
+            padding: 0;
+        }
+    }
+
+    .heyra__image-container {
+        width: 40%;
+        position: relative;
+        padding-top: 40%;
+        .heyra__image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: contain;
+        }
+    }
+    .neyra__main-link-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: auto 0 auto 55px;
+        .heyra__main-link {
+            width: 30px;
+            &:hover {
+                opacity: 0.7;
+                transition: 0.5s;
+            }
+        }
+    }
+    @media (max-width: 800px) {
+        .heyra__image-container {
+            margin: 0 auto 0 auto;
+            width: 100%;
+            position: relative;
+            padding-top: 100%;
+        }
+
+        .neyra__main-link-container {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1285px) {
+    .neyra__main {
+        margin: 0 26px 227px 26px;
+    }
+}
+
+@media (max-width: 800px) {
+    .neyra__main {
+        margin: 0 26px 86px 26px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .neyra__main {
+        margin: 0 10px 86px 20px;
+    }
+}
